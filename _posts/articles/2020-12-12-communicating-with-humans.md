@@ -13,9 +13,7 @@ comments: true
 share: true
 ---
 
-I have a separate section for using bait.
-
-<iframe src='//gifs.com/embed/k8A5X6' frameborder='0' scrolling='no' width='960px' height='1704px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 
+<iframe src='//gifs.com/embed/q7KjBD' frameborder='0' scrolling='no' width='450px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 

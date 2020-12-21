@@ -13,9 +13,7 @@ comments: true
 share: true
 ---
 
-Cat thinking mirror is window or open area:
 
-<iframe src='//gifs.com/embed/cat-mirror-P7O1r4' frameborder='0' scrolling='no' width='640px' height='800px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 
 <iframe src='//gifs.com/embed/cat-lock-YW1602' frameborder='0' scrolling='no' width='480px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
@@ -60,3 +58,10 @@ Unscrewing lids:
 Note: there's more to this one as well, but I only uploaded 20 seconds of it.
 
 <iframe src='//gifs.com/embed/BNwgEk' frameborder='0' scrolling='no' width='360px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+Jenga:
+
+This one is much longer... I'll upload the rest at some point
+
+<iframe src='//gifs.com/embed/zvWmOO' frameborder='0' scrolling='no' width='384px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
