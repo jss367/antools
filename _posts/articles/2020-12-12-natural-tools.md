@@ -19,3 +19,7 @@ share: true
 <iframe src='//gifs.com/embed/1WXjEm' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 <iframe src='//gifs.com/embed/4Q18Gx' frameborder='0' scrolling='no' width='960px' height='1440px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+puffin with stick:
+
+<iframe src='//gifs.com/embed/QnP1K0' frameborder='0' scrolling='no' width='1280px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manipulating Other Animals
+title: Communicating with Humans
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2016-06-01T14:17:25-04:00
 categories: articles
@@ -16,3 +16,6 @@ share: true
 I have a separate section for using bait.
 
 <iframe src='//gifs.com/embed/k8A5X6' frameborder='0' scrolling='no' width='960px' height='1704px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+
+
