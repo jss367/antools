@@ -13,24 +13,6 @@ comments: true
 share: true
 ---
 
-There's a special one for electronics:
-
-[Cat thinking cat in mirror is another cat](https://github.com/jss367/antools/blob/gh-pages-2.3.4/images/DASH_480.mp4)
-
-
-
-https://gifs.com/gif/crow-r8L0X2?muted=false
-
-https://j.gifs.com/r8L0X2.gif
-
-<iframe src='//gifs.com/embed/gorilla-smart-phone-p8JgBV' frameborder='0' scrolling='no' width='640px' height='1138px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-<img src="/images/DASH_480.mp4" alt="Drawing" style="width: 400px;"/>
-
-
-
-<img src="/images/celebes_crested_acaque_looking_in_mirror.gif" alt="Drawing" style="width: 400px;"/>
-
 Cat thinking mirror is window or open area:
 
 <iframe src='//gifs.com/embed/cat-mirror-P7O1r4' frameborder='0' scrolling='no' width='640px' height='800px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
@@ -72,6 +54,7 @@ FAKE WARNING!!! I believe this one is fake, although I must say it's very good.
 
 
 Unscrewing lids:
+
 Note: there's more to this one as well, but I only uploaded 20 seconds of it.
 
 <iframe src='//gifs.com/embed/BNwgEk' frameborder='0' scrolling='no' width='360px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
