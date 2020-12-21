@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mirrors
+title: Natural tools
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2016-06-01T14:17:25-04:00
 categories: articles
@@ -16,3 +16,6 @@ share: true
 
 <iframe src='//gifs.com/embed/NLMxXv' frameborder='0' scrolling='no' width='552px' height='284px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
+<iframe src='//gifs.com/embed/1WXjEm' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+<iframe src='//gifs.com/embed/4Q18Gx' frameborder='0' scrolling='no' width='960px' height='1440px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
