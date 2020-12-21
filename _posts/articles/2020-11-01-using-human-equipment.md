@@ -37,3 +37,18 @@ Cat thinking mirror is window or open area:
 
 
 <iframe src='//gifs.com/embed/cat-lock-YW1602' frameborder='0' scrolling='no' width='480px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+
+<iframe src='//gifs.com/embed/q7KjL0' frameborder='0' scrolling='no' width='720px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+This is certainly the result of interaction with humans:
+
+<iframe src='//gifs.com/embed/p8JgLp' frameborder='0' scrolling='no' width='720px' height='404px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+
+Recycling and putting away trash:
+
+
+<iframe src='//gifs.com/embed/D1yRWy' frameborder='0' scrolling='no' width='640px' height='640px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+
