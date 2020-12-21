@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Body Parts
+title: Manipulating Other Animals
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2016-06-01T14:17:25-04:00
 categories: articles
@@ -13,7 +13,5 @@ comments: true
 share: true
 ---
 
-These are not strictly tools, but using body parts in interesting ways.
 
-<iframe src='//gifs.com/embed/0YWgDL' frameborder='0' scrolling='no' width='900px' height='506px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
+<iframe src='//gifs.com/embed/k8A5X6' frameborder='0' scrolling='no' width='960px' height='1704px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>

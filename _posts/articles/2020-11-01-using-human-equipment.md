@@ -36,3 +36,4 @@ Cat thinking mirror is window or open area:
 <iframe src='//gifs.com/embed/cat-mirror-P7O1r4' frameborder='0' scrolling='no' width='640px' height='800px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 
+<iframe src='//gifs.com/embed/cat-lock-YW1602' frameborder='0' scrolling='no' width='480px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
