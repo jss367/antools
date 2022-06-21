@@ -12,7 +12,7 @@ Choose gif
 
 
 Save it in
-C:\Users\Julius\Documents\GitHub\antools\assets\images\bait
+C:\Users\Julius\Documents\GitHub\antools\assets\images\
 
 
 
