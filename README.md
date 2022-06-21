@@ -32,3 +32,8 @@ Go from reddit post to downloadable video: https://viddit.red/
 Similar sites:
 
 https://avianenrichment.com/learn/emotional-needs/mental-stimulation/tool-use-in-parrots
+
+
+Images are stored in E:\animalswithtoolsbackups
+
+
