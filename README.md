@@ -15,7 +15,6 @@ Save it in
 C:\Users\Julius\Documents\GitHub\antools\assets\images\bait
 
 
-Your website is here: https://jss367.github.io/antools/articles/mirrors/
 
 
 This is how you want to link them:
@@ -35,5 +34,3 @@ https://avianenrichment.com/learn/emotional-needs/mental-stimulation/tool-use-in
 
 
 Images are stored in E:\animalswithtoolsbackups
-
-
