@@ -46,3 +46,4 @@ And as much time as I -or anyone - can spend with animals, there’s still a ple
 
 Yes, I am learning things about animal cognition from high schoolers’ TikTok videos that I didn’t from reading scientific papers. The preponderance of the evidence is significant. If everyone filmed their cat walking in front of the mirror and the most interesting or funny were posted, that’s an incredible dataset. The funny ones are usually the most enlightening. I think the chance of a grand conspiracy of people making animals appear to be using tools seems far-fetched to me. Ranging from a grand conspiracy of teenagers (I’m nominating “grand conspiracy” to refer to a group of teenagers) who kick their kicks from fooling nerds who collect videos of animals to people manipulating photos to get more likes.
 
+We don't have to pretend the question of do animals dream is any harder than it is. We know that. We've seen dogs run in their sleep. Doesn't mean all animals and…
