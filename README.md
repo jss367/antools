@@ -34,3 +34,6 @@ https://avianenrichment.com/learn/emotional-needs/mental-stimulation/tool-use-in
 
 
 Images are stored in E:\animalswithtoolsbackups
+
+
+More: https://x.com/buitengebieden/status/1881453092761452949
