@@ -1,5 +1,7 @@
 - title: Dog moving fence
   id: ea1488771affd3099d681856312bed34
+  - title: Dog moving fence (copy)
+  id: 907dfbbf6f14c4c397c80cc261f3a9fe
 - title: Dog picking up toy
   id: ba3c3f73c4ff8cba079687cbd085ab3c
 - title: Cat making bed
@@ -54,7 +56,7 @@
 - title: Magpie stopping fire
   id: d6570e71760837e6da186b83e6221d44
 - title: Dog takes care of person
-  id: 85cd9827d6b73c6498b0f1fcd409a017
+  id: dd5981466713ef0a2719d0e943020882
 - title: Elephant prank with hat
   id: f1fbc0fc17b03306bcccadfcfb924137
 - title: Smart dog
@@ -65,7 +67,7 @@
 - title: Cow and chicken
   id: 5999a3dac05b244d23641f4d741539a4
 - title: Magpie water displacement
-  id: 85cd9827d6b73c6498b0f1fcd409a017
+  id: 712cd76a34a557070e5d551c5e1405d7
 
 - title: Dog skateboard
   id: 019bb9149e9ee8a07c7431e3b67bd505
@@ -78,6 +80,10 @@
 
 
 
+
+
+- title: Dog watching TV
+  id: a82f01997bdc258a47723506dc6afb62
 
 
 
