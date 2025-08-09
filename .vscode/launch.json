@@ -1,39 +1,69 @@
 {
-    // Configure Python launches for scripts/uploader.py
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "List media (CSV)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/list_media.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--format",
+                "csv"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "List media for project → JSON file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/list_media.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--project",
+                "antools",
+                "--format",
+                "json",
+                "--out",
+                "${workspaceFolder}/media.json",
+                "-v"
+            ],
+            "justMyCode": true
+        },
         {
             "name": "Uploader (dry run)",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/scripts/uploader.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
                 "--dry-run",
                 "-v",
                 "--log-csv",
                 "upload_log.csv",
-                "--skip-existing",
+                "--skip-existing"
             ],
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
+            "justMyCode": true
         },
         {
             "name": "Uploader (run)",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/scripts/uploader.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
                 "-v",
                 "--log-csv",
                 "upload_log.csv",
-                "--skip-existing",
+                "--skip-existing"
             ],
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
+            "justMyCode": true
         }
     ]
 }

@@ -9,9 +9,11 @@ media:
   - kind: image
     title: Crocodile with twigs (bait)
     id: new_animals_with_tools-a48524782e4cfd0701214c984cfc2ca318ed2f29
+    comment: "From the baiting category."
   - kind: video
     title: Raven snowboarding
     id: 090474f3589b9f1ca8f2c24cee3b88c5
+    comment: "Smart bird!"
 ---
 
 This post demonstrates mixing Cloudflare Stream videos and Cloudflare Images in a single ordered list via the `media` front matter.

@@ -8,4 +8,7 @@
     allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
     allowfullscreen>
   </iframe>
+  {% if include.comment %}
+    <div class="media-comment">{{ include.comment | markdownify }}</div>
+  {% endif %}
 </div>

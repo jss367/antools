@@ -47,20 +47,20 @@
         {% if page.media %}
           {% for m in page.media %}
             {% if m.kind == "video" %}
-              {% include stream.html title=m.title id=m.id %}
+              {% include stream.html title=m.title id=m.id comment=m.comment %}
             {% elsif m.kind == "image" %}
-              {% include image.html title=m.title id=m.id %}
+              {% include image.html title=m.title id=m.id comment=m.comment %}
             {% endif %}
           {% endfor %}
         {% else %}
           {% if page.videos %}
             {% for v in page.videos %}
-              {% include stream.html title=v.title id=v.id %}
+              {% include stream.html title=v.title id=v.id comment=v.comment %}
             {% endfor %}
           {% endif %}
           {% if page.images %}
             {% for i in page.images %}
-              {% include image.html title=i.title id=i.id %}
+              {% include image.html title=i.title id=i.id comment=i.comment %}
             {% endfor %}
           {% endif %}
         {% endif %}
