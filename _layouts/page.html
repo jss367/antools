@@ -20,6 +20,27 @@
       </header>
       <div class="entry-content">
         {{ content }}
+        
+        {% if page.media %}
+          {% for m in page.media %}
+            {% if m.kind == "video" %}
+              {% include stream.html title=m.title id=m.id %}
+            {% elsif m.kind == "image" %}
+              {% include image.html title=m.title id=m.id %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% if page.videos %}
+            {% for v in page.videos %}
+              {% include stream.html title=v.title id=v.id %}
+            {% endfor %}
+          {% endif %}
+          {% if page.images %}
+            {% for i in page.images %}
+              {% include image.html title=i.title id=i.id %}
+            {% endfor %}
+          {% endif %}
+        {% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
