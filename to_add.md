@@ -8,3 +8,5 @@ https://i.redd.it/3xq2823n7nc31.jpg
 
 cat unlocks doors
 https://www.instagram.com/reel/DMS89i0vT4K/?igsh=NjFhOGMzYTE3ZQ%3D%3D&wa_logging_event=video_play_open
+
+cat moving chair for person: https://x.com/ShouldHaveCat/status/1953925575468363917
