@@ -1,0 +1,13 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const iframes = document.querySelectorAll(".autoplay-video");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const player = entry.target.contentWindow;
+      player.postMessage({ event: entry.isIntersecting ? "play" : "pause" }, "*");
+    });
+  }, { threshold: 0.5 }); // start playing when 50% visible
+
+  iframes.forEach(iframe => observer.observe(iframe));
+});
+</script>

@@ -1,0 +1,11 @@
+{% assign customer = site.cloudflare_stream_customer %}
+<div class="stream-video">
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  <iframe
+    class="autoplay-video"
+    src="https://customer-{{ customer }}.cloudflarestream.com/{{ include.id }}/iframe?muted=true&autoplay=false"
+    style="width:100%;aspect-ratio:16/9;border:0"
+    allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>

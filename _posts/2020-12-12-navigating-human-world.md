@@ -39,6 +39,20 @@ share: true
 
 
 
+
+
+## Dog moving fence
+
+<iframe
+  class="autoplay-video"
+  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/ea1488771affd3099d681856312bed34/iframe?muted=true&autoplay=false"
+  style="width:100%;aspect-ratio:16/9;border:0"
+  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+
 ## Dog picking up toy
 
 <iframe
