@@ -44,3 +44,32 @@ share: true
   allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
   allowfullscreen>
 </iframe>
+
+
+
+<iframe
+  class="autoplay-video"
+  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/ba98a7130545eba92700fadee37118b8/iframe?muted=true&autoplay=false"
+  style="width:100%;aspect-ratio:16/9;border:0"
+  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const iframes = document.querySelectorAll(".autoplay-video");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const iframe = entry.target;
+      const player = iframe.contentWindow;
+      if (entry.isIntersecting) {
+        player.postMessage({ event: "play" }, "*");
+      } else {
+        player.postMessage({ event: "pause" }, "*");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  iframes.forEach(iframe => observer.observe(iframe));
+});
+</script>
