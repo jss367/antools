@@ -39,7 +39,7 @@ share: true
 
 
 <iframe
-  src="https://customer-customer-1ixj2hastb04w2ye.cloudflarestream.com.cloudflarestream.com/ba98a7130545eba92700fadee37118b8/iframe"
+  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/ba98a7130545eba92700fadee37118b8/iframe"
   style="width:100%;aspect-ratio:16/9;border:0"
   allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
   allowfullscreen>
