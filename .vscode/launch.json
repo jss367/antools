@@ -1,0 +1,33 @@
+{
+    // Configure Python launches for scripts/uploader.py
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Uploader (dry run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/uploader.py",
+            "args": [
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
+                "--dry-run",
+                "-v"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        },
+        {
+            "name": "Uploader (run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/uploader.py",
+            "args": [
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
+                "-v"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        }
+    ]
+}
