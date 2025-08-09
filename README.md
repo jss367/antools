@@ -38,3 +38,14 @@ Images are stored in E:\animalswithtoolsbackups
 
 
 More: https://x.com/buitengebieden/status/1881453092761452949
+
+
+
+Videos are uploaded to Cloudflare. Here's an example: https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/stream/videos/ba98a7130545eba92700fadee37118b8
+
+Upload them from here: https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/stream/videos
+
+
+
+
+
