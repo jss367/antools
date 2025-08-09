@@ -1,3 +1,9 @@
+"""
+For unknown reasons, CloudFlare keeps saying I've used up all my quota and only uploads a few videos at a time.
+
+Running this file over and over eventually uploads all the videos.
+"""
+
 import argparse
 import concurrent.futures as futures
 import csv
@@ -14,6 +20,11 @@ from pathlib import Path
 from typing import Optional, Tuple
 
 import requests
+
+
+class QuotaExceededError(Exception):
+    pass
+
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif", ".bmp", ".tiff", ".tif", ".heic", ".heif"}
 VIDEO_EXTS = {".mp4", ".mov", ".m4v", ".mkv", ".webm", ".avi", ".wmv", ".mpeg", ".mpg", ".m2ts"}
@@ -43,6 +54,11 @@ class CfUploader:
         self.project: Optional[str] = None
         self.skip_existing = skip_existing
         self._existing_key_set: set[tuple[str, str, str]] = set()
+        self.stream_quota_exceeded = threading.Event()
+        # Global rate limit between Stream API calls (seconds)
+        self.stream_min_interval_seconds: float = 1.0
+        self._stream_rate_lock = threading.Lock()
+        self._last_stream_call_ts: float = 0.0
 
     def run(self, folder: Path):
         self.root_folder = folder.resolve()
@@ -86,7 +102,7 @@ class CfUploader:
                 except Exception as e:
                     logging.warning("Could not load existing CSV for skip logic: %s", e)
 
-        files = [p for p in folder.rglob("*") if p.is_file()]
+        files = [p for p in folder.rglob("*") if p.is_file() and not should_ignore_file(p)]
         if not files:
             logging.warning("No files found.")
             return
@@ -102,8 +118,8 @@ class CfUploader:
         logging.info(
             "Found %d uploadable files (%d images, %d videos).",
             len(work),
-            sum(1 for k, _ in work if k == "image"),
-            sum(1 for k, _ in work if k == "video"),
+            sum(k == "image" for k, _ in work),
+            sum(k == "video" for k, _ in work),
         )
 
         with futures.ThreadPoolExecutor(max_workers=self.concurrency) as ex:
@@ -181,6 +197,7 @@ class CfUploader:
             )
             if self.skip_existing:
                 self._existing_key_set.add(("image", self.project or "", rel))
+        time.sleep(1)
 
     # ---------- Videos (Stream / basic direct-upload) ----------
 
@@ -194,7 +211,14 @@ class CfUploader:
         size_bytes = path.stat().st_size
         # Basic direct-upload uses a one-time uploadURL; for very large files, consider tus (not implemented here).
         # If you routinely have >200 MB files, use tus uploads instead (Cloudflare docs).
-        upload_url, uid = self._stream_create_direct_upload(DEFAULT_MAX_DURATION_SECONDS)
+        # Rate-limit requests for direct upload URLs across threads
+        self._rate_limit_stream()
+        try:
+            upload_url, uid = self._stream_create_direct_upload(DEFAULT_MAX_DURATION_SECONDS)
+        except QuotaExceededError:
+            logging.warning("Cloudflare Stream quota exceeded (10011). Waiting 1s before continuing to next video.")
+            time.sleep(1)
+            return
         logging.info("Uploading video: %s (uid=%s, size=%.2f MB)", path, uid, size_bytes / (1024 * 1024))
 
         files = {"file": (path.name, path.open("rb"), guess_mime(path))}
@@ -236,11 +260,34 @@ class CfUploader:
             )
             if self.skip_existing:
                 self._existing_key_set.add(("video", self.project or "", rel))
+        time.sleep(1)
+
+    def _rate_limit_stream(self) -> None:
+        """Ensure a minimum interval between Stream API calls across threads."""
+        if self.stream_min_interval_seconds <= 0:
+            return
+        with self._stream_rate_lock:
+            now = time.time()
+            elapsed = now - self._last_stream_call_ts
+            wait = self.stream_min_interval_seconds - elapsed
+            if wait > 0:
+                time.sleep(wait)
+                now = time.time()
+            self._last_stream_call_ts = now
 
     def _stream_create_direct_upload(self, max_duration_seconds: int) -> Tuple[str, str]:
         url = f"https://api.cloudflare.com/client/v4/accounts/{self.account_id}/stream/direct_upload"
         payload = {"maxDurationSeconds": max_duration_seconds}
         resp = self._retry(lambda: self.session.post(url, json=payload, timeout=30))
+        # Detect quota exceeded to short-circuit further video uploads
+        try:
+            data = resp.json()
+        except Exception:
+            data = {}
+        if resp.status_code == 413 and any(
+            isinstance(err, dict) and err.get("code") == 10011 for err in (data.get("errors") or [])
+        ):
+            raise QuotaExceededError("Cloudflare Stream storage capacity exceeded")
         self._check(resp, "Creating Stream direct upload URL failed")
         data = resp.json().get("result", {})
         return data["uploadURL"], data["uid"]
@@ -344,6 +391,10 @@ def guess_mime(path: Path) -> str:
 
 
 def classify_file(path: Path) -> Optional[str]:
+    # Ignore AppleDouble sidecar files and hidden dotfiles
+    name = path.name
+    if name.startswith("._") or name in {".DS_Store", "Thumbs.db", "desktop.ini"}:
+        return None
     ext = path.suffix.lower()
     if ext in IMAGE_EXTS:
         return "image"
@@ -356,6 +407,45 @@ def classify_file(path: Path) -> Optional[str]:
     if mime and mime.startswith("video/"):
         return "video"
     return None
+
+
+def should_ignore_file(path: Path) -> bool:
+    """Return True for macOS/Windows/NAS metadata files we don't want to upload."""
+    name = path.name
+    if name.startswith("._"):
+        return True
+    if name.startswith(".") and name not in {
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".gif",
+        ".webp",
+        ".avif",
+        ".bmp",
+        ".tiff",
+        ".tif",
+        ".heic",
+        ".heif",
+        ".mp4",
+        ".mov",
+        ".m4v",
+        ".mkv",
+        ".webm",
+        ".avi",
+        ".wmv",
+        ".mpeg",
+        ".mpg",
+        ".m2ts",
+    }:
+        return True
+    if name in {".DS_Store", "Thumbs.db", "desktop.ini", "Icon\r"}:
+        return True
+    # Ignore common NAS/cloud metadata directories like Synology's @eaDir
+    ignored_dirs = {"@eaDir", ".AppleDouble", ".Spotlight-V100", ".Trashes", ".fseventsd"}
+    for parent in path.parents:
+        if parent.name in ignored_dirs:
+            return True
+    return False
 
 
 def main():

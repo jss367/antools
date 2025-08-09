@@ -40,11 +40,11 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "args": [
-                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
                 "--dry-run",
                 "-v",
                 "--log-csv",
-                "upload_log.csv",
+                "logs/upload_log.csv",
                 "--skip-existing"
             ],
             "justMyCode": true
@@ -57,10 +57,10 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "args": [
-                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
                 "-v",
                 "--log-csv",
-                "upload_log.csv",
+                "logs/upload_log.csv",
                 "--skip-existing"
             ],
             "justMyCode": true
