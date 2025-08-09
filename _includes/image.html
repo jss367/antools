@@ -1,0 +1,10 @@
+<div class="cf-image">
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  <img
+    src="https://imagedelivery.net/{{ site.cloudflare_images_account_hash }}/{{ include.id }}/public"
+    alt="{{ include.title | escape }}"
+    loading="lazy"
+    style="width:100%;height:auto"
+  />
+  
+</div>
