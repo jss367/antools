@@ -46,6 +46,8 @@ Videos are uploaded to Cloudflare. Here's an example: https://dash.cloudflare.co
 Upload them from here: https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/stream/videos
 
 
+Images go here:
 
+https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/images?stamp=1754724111795
 
 
