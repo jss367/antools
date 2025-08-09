@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 title: Media Demo (Mixed)
-permalink: /media-mixed/
+tags: [demo, media]
 media:
   - kind: video
     title: Dog watching TV
@@ -14,4 +14,4 @@ media:
     id: 090474f3589b9f1ca8f2c24cee3b88c5
 ---
 
-This page demonstrates mixing Cloudflare Stream videos and Cloudflare Images in a single ordered list via the `media` front matter.
+This post demonstrates mixing Cloudflare Stream videos and Cloudflare Images in a single ordered list via the `media` front matter.

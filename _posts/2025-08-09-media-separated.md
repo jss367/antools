@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 title: Media Demo (Separated)
-permalink: /media-separated/
+tags: [demo, media]
 videos:
   - title: Dog watching TV
     id: a82f01997bdc258a47723506dc6afb62
@@ -12,4 +12,4 @@ images:
     id: new_animals_with_tools-a48524782e4cfd0701214c984cfc2ca318ed2f29
 ---
 
-This page renders videos first and images after, using separate `videos` and `images` front matter arrays.
+This post renders videos first and images after, using separate `videos` and `images` front matter arrays.
