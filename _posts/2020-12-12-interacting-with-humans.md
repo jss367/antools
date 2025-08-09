@@ -8,6 +8,25 @@ image:
   feature: feature.jpg
 comments: true
 share: true
+title: bear_jumping_with_child
+id: b192ff5b91134120b7f46a7360478d05
+comment: "Evidence for theory of mind?"
+- kind: video
+title: Squirrel Asks Dude For Water
+id: 6f11398adacd47aca978d871e77ea7cb
+comment: "Evidence for theory of mind?"
+- kind: video
+title: Dog skateboarding.mp4
+id: 9f45e9178c174a498246fc789bdcceb5
+comment: "Evidence for theory of mind?"
+- kind: video
+title: Dog skateboarding.mp4
+id: 9f45e9178c174a498246fc789bdcceb5
+comment: "Evidence for theory of mind?"
+- kind: video
+title: Dog skateboarding.mp4
+id: 9f45e9178c174a498246fc789bdcceb5
+comment: "Evidence for theory of mind?"
 ---
 
 This is another post where most of these aren't actually using tools, but I came across too many of these videos that I thought were interesting to ignore. Plus, they're cute.
@@ -45,5 +64,3 @@ I like this video but I think the main point is serves as is a cautionary tail. 
 
 
 # Imitation
-
-

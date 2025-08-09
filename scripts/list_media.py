@@ -4,6 +4,7 @@ import csv
 import json
 import logging
 import os
+import re
 import sys
 from dataclasses import dataclass
 from datetime import datetime
@@ -13,6 +14,35 @@ from typing import Optional
 import requests
 
 API_BASE = "https://api.cloudflare.com/client/v4"
+
+
+# --- Helpers ---
+def normalize_media_title(raw: str) -> str:
+    """Convert things like 'dog_walk.mp3' to 'Dog Walk'.
+
+    Steps:
+    - strip extension
+    - replace underscores/hyphens with spaces
+    - collapse whitespace
+    - title-case the result
+    """
+    if not raw:
+        return ""
+
+    # Remove extension if present
+    stem = Path(raw).stem
+
+    # Replace separators with spaces and normalize whitespace
+    text = re.sub(r"[_\-]+", " ", stem)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+
+    tokens = text.split(" ")
+
+    # Title-case tokens
+    titled = " ".join(tok.capitalize() for tok in tokens if tok)
+    return titled
 
 
 @dataclass
@@ -57,7 +87,8 @@ class CfMediaLister:
                 uid = v.get("uid") or ""
                 meta = v.get("meta") or {}
                 # Our uploader sets meta.name, meta.project, meta.source
-                title = (meta.get("name") or v.get("name") or "").strip()
+                raw_title = (meta.get("name") or v.get("name") or "").strip()
+                title = normalize_media_title(raw_title)
                 project_value = (meta.get("project") or "").strip()
                 if project is not None and project_value != project:
                     continue
@@ -123,7 +154,7 @@ class CfMediaLister:
 
             for img in items:
                 image_id = img.get("id") or ""
-                filename = (img.get("filename") or "").strip()
+                filename = normalize_media_title((img.get("filename") or "").strip())
                 meta = img.get("meta") or img.get("metadata") or {}
                 project_value = (meta.get("project") or "").strip()
                 if project is not None and project_value != project:
@@ -161,18 +192,27 @@ class CfMediaLister:
 
 def write_csv(rows: list[MediaRow], out: Path | None):
     fieldnames = ["kind", "id", "title", "project", "created", "duration_seconds"]
-    if out is None:
-        writer = csv.DictWriter(sys.stdout, fieldnames=fieldnames)
+
+    videos = [r for r in rows if r.kind == "video"]
+    images = [r for r in rows if r.kind == "image"]
+
+    def _write(file_like):
+        writer = csv.DictWriter(file_like, fieldnames=fieldnames)
         writer.writeheader()
-        for r in rows:
+        for r in videos:
             writer.writerow(r.__dict__)
+        if videos and images:
+            # Insert a blank line between sections
+            file_like.write("\n")
+        for r in images:
+            writer.writerow(r.__dict__)
+
+    if out is None:
+        _write(sys.stdout)
     else:
         out.parent.mkdir(parents=True, exist_ok=True)
         with out.open("w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            for r in rows:
-                writer.writerow(r.__dict__)
+            _write(f)
 
 
 def write_json(rows: list[MediaRow], out: Path | None):
