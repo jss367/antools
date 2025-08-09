@@ -10,7 +10,10 @@
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
                 "--dry-run",
-                "-v"
+                "-v",
+                "--log-csv",
+                "upload_log.csv",
+                "--skip-existing",
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
@@ -23,7 +26,10 @@
             "program": "${workspaceFolder}/scripts/uploader.py",
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/new_animals_with_tools",
-                "-v"
+                "-v",
+                "--log-csv",
+                "upload_log.csv",
+                "--skip-existing",
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
