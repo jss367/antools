@@ -1,7 +1,7 @@
 
 video,,,added,2025-08-09T20:01:17.463850+00:00,28.7
-video,90e97e9797924d3a8deb3edb18835e53,Dogunderstandingleash,added,2025-08-09T20:01:17.126719+00:00,24.5
-video,d6a2127bac9a4cd78fec45894a769402,Magpie Stopping Fire,added,2025-08-09T20:01:17.099510+00:00,60
+video,,,added,2025-08-09T20:01:17.126719+00:00,24.5
+video,,,added,2025-08-09T20:01:17.099510+00:00,60
 video,5948aa1e2c674f178e142a5e0cade09f,Dog Object Permanence,added,2025-08-09T20:00:47.703992+00:00,11.5
 video,aeff48964f9d420f8057db836dd11995,Goat Showing Compassion,added,2025-08-09T20:00:47.699396+00:00,7.7
 video,647284769bde4e62865067d261399bd5,Monkey Turns Off Tap After Drinking Water.,added,2025-08-09T20:00:41.294717+00:00,11
@@ -23,9 +23,9 @@ video,1005592adcc0473dae070d6d40ffa85a,Bird With Tablet,added,2025-08-09T19:58:4
 video,85664e24590649eab8ef87e920dc3437,Chimp Attempting Lock,added,2025-08-09T19:58:41.463186+00:00,39.9
 video,e9c065b066d0411b853d945eb6e8af6f,Dog Watching Tv,added,2025-08-09T19:58:08.621256+00:00,11.4
 video,cec2d85c02f5451ab6e869dde0e5e249,Dog Imitating Dog On Tv,added,2025-08-09T19:58:08.611374+00:00,60
-video,35d5ff2e2fb74c728985dfb64146991a,Bird Using Smart Phone,added,2025-08-09T19:58:08.601390+00:00,12.7
+video,,,added,2025-08-09T19:58:08.601390+00:00,12.7
 video,df9b317b435c4e56b3d66669d89dc6ba,Catwatchingipad,added,2025-08-09T19:57:55.977852+00:00,11.8
-video,b2b6239b704143068bfadce26e1cff09,Gorilla Tender,added,2025-08-09T19:57:55.950176+00:00,11.3
+video,,,added,2025-08-09T19:57:55.950176+00:00,11.3
 video,b78b078261e842c2b837c87c9599b03d,Sheep Recognizing Human Faces,added,2025-08-09T19:57:55.938474+00:00,46.6
 video,e9395520fb124426b7d43ed823b8b436,Kittenswatchingsmartphone,added,2025-08-09T19:57:42.298568+00:00,13.3
 video,cc7eb632b05d4116a2da4c872b32f2e8,Blackheronusingwings,added,2025-08-09T19:57:42.273443+00:00,21

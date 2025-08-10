@@ -8,24 +8,35 @@ image:
   feature: feature.jpg
 comments: true
 share: true
+media:
+  - kind: video
+    title: Gorilla Tender
+    id: b2b6239b704143068bfadce26e1cff09
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Bird Using Smart Phone
+    id: 35d5ff2e2fb74c728985dfb64146991a
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog skateboarding.mp4
+    id: 9f45e9178c174a498246fc789bdcceb5
+    comment: "Evidence for theory of mind?"
 ---
-
 
 This is really more screens/computers, not electronics. For example, turning on AC doesn't go here
 
 <b>Table of contents</b>
-* TOC
-{:toc}
 
+- TOC
+  {:toc}
 
 <iframe src='//gifs.com/embed/cat-watching-ipad-ANvnWl' frameborder='0' scrolling='no' width='720px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 <iframe src='//gifs.com/embed/GvBZWL' frameborder='0' scrolling='no' width='408px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 This more to this gif I have but I only uploaded 20 seconds at the moment
+
 <iframe src='//gifs.com/embed/71g6Jy' frameborder='0' scrolling='no' width='384px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-
 
 ## Gorilla Directing Person to Use Smartphone
 
@@ -35,11 +46,9 @@ This more to this gif I have but I only uploaded 20 seconds at the moment
 
 I like to think that the guy is showing the gorilla some females and he's selecting through them, although it's not easy to tell what's on the screen.
 
-
 ## Bird Using Smart Phone
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/bird_using_smart_phone.gif?raw=true' />
-
 
 ## Sheep Recognizing Human Faces
 
@@ -53,13 +62,10 @@ This (and many others) clearly show that the dog recognizes the dog on the TV. T
 
 > Note: Sped up 4X
 
-
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/electronics/dog_imitating_dog_on_tv.gif?raw=true' />
-
 
 ## Bird with Tablet
 
 > Note: Sped up 6X
-
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/electronics/bird_with_tablet.gif?raw=true' />

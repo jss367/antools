@@ -8,23 +8,28 @@ image:
   feature: feature.jpg
 comments: true
 share: true
+media:
+  - kind: video
+    title: Dog Understanding Leash
+    id: 90e97e9797924d3a8deb3edb18835e53
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog skateboarding.mp4
+    id: 9f45e9178c174a498246fc789bdcceb5
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog skateboarding.mp4
+    id: 9f45e9178c174a498246fc789bdcceb5
+    comment: "Evidence for theory of mind?"
 ---
-
-
-
 
 <iframe src='//gifs.com/embed/cat-lock-YW1602' frameborder='0' scrolling='no' width='480px' height='480px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
-
 <iframe src='//gifs.com/embed/q7KjL0' frameborder='0' scrolling='no' width='720px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-
 
 ## Recycling and putting away trash:
 
-
 <iframe src='//gifs.com/embed/D1yRWy' frameborder='0' scrolling='no' width='640px' height='640px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
 
 <iframe src='//gifs.com/embed/crow-r8L0X2' frameborder='0' scrolling='no' width='360px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
@@ -34,13 +39,9 @@ Leashes are another thing where dogs often don't seem to understand, and if they
 
 <iframe src='//gifs.com/embed/ROQgBO' frameborder='0' scrolling='no' width='720px' height='1276px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
-
 ## Monkey Turning off Faucet
 
-
-
 I like this one because it shows that it knows to turn it off... I'm curious if that's because it saw others do that, or it intuitively knows that the supply of water is limited and it should be preserved (probably the first).
-
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/monkey_turning_off_faucet.gif?raw=true' />
 
@@ -68,18 +69,15 @@ Sped up 2X to shorten GIF size
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/dog_using_raft.gif?raw=true' />
 
-
 ## Cow Undoing Fence
 
 > Note: Sped up 2X
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/cow_undoing_fence.gif?raw=true' />
 
-
 ## Cat Turning on AC
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/cat_turning_on_ac.gif?raw=true' />
-
 
 ## Magpie Using Water Displacement
 
@@ -89,13 +87,11 @@ This should probably be in a separate page about problem solving. Also, note tha
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/magpie_water_displacement.gif?raw=true' />
 
-
 ## Chimp Attempting Lock
 
 > Note: Sped up 3X to reduce size
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/chimp_attempting_lock.gif?raw=true' />
-
 
 ## Orangutan Canoeing
 
@@ -114,7 +110,6 @@ This is certainly the result of interaction with humans:
 This one seems sped up. Will have to double check.
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/dog_taking_care_of_patient.gif?raw=true' />
-
 
 ## Unscrewing lids
 
