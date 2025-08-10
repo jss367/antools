@@ -8,32 +8,35 @@ image:
   feature: feature.jpg
 comments: true
 share: true
-title: Pigeon Public Transit
-id: eaa5b485645344809f9225326d20dac8
-comment: "Evidence for theory of mind?"
-- kind: video
-title: Deer Crossing The Street
-id: c0f5977434994706bac6a7c84f66e0c5
-comment: "Evidence for theory of mind?"
-- kind: video
-title: Dog Moving Fence
-id: c1c5216e10ce4266bce8b6ae77aa8861
-comment: "Evidence for theory of mind?"
-title: Crow Picking Up Trash
-id: 466f6fde163748d2a7365481193b19a4
-comment: "Evidence for theory of mind?"
-- kind: video
-title: Pigeon Using Public Transportatio
-id: 534f12b5418f44f5a6324ba65793f178
-comment: "Evidence for theory of mind?"
-- kind: video
-title: Dog With Stick Through Doors
-id: 3976a5d641294c93a8342e9da6e76e01
-comment: "Evidence for theory of mind?"
-- kind: video
-title: Dog Waiting For Traffic Signal
-id: 2edbe9634f29452fa57ade2780d0c114
-comment: "Evidence for theory of mind?"
+media:
+  - kind: video
+    title: Pigeon Public Transit
+    id: eaa5b485645344809f9225326d20dac8
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Deer Crossing The Street
+    id: c0f5977434994706bac6a7c84f66e0c5
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog Moving Fence
+    id: c1c5216e10ce4266bce8b6ae77aa8861
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Crow Picking Up Trash
+    id: 466f6fde163748d2a7365481193b19a4
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Pigeon Using Public Transportatio
+    id: 534f12b5418f44f5a6324ba65793f178
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog With Stick Through Doors
+    id: 3976a5d641294c93a8342e9da6e76e01
+    comment: "Evidence for theory of mind?"
+  - kind: video
+    title: Dog Waiting For Traffic Signal
+    id: 2edbe9634f29452fa57ade2780d0c114
+    comment: "Evidence for theory of mind?"
 ---
 
 ---
