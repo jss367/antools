@@ -107,6 +107,39 @@
                 "-v"
             ],
             "justMyCode": true
+        },
+        {
+            "name": "Folder → YAML (dry run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/folder_to_yaml.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added/electronics",
+                "--log-csv",
+                "logs/upload_log.csv",
+                "--dry-run",
+                "-v"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Folder → YAML (run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/folder_to_yaml.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added/electronics",
+                "--log-csv",
+                "logs/upload_log.csv",
+                "-v"
+            ],
+            "justMyCode": true
         }
     ]
 }

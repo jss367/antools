@@ -60,7 +60,19 @@ def normalize_media_title(raw: str) -> str:
 
     # Title-case tokens
     titled = " ".join(tok.capitalize() for tok in tokens if tok)
-    return titled
+    return fix_special_casing(titled)
+
+
+def fix_special_casing(title: str) -> str:
+    """Apply brand/style casing fixes (e.g., Ipad -> iPad, tv/Tv -> TV)."""
+    replacements: list[tuple[re.Pattern[str], str]] = [
+        (re.compile(r"\bipad\b", re.IGNORECASE), "iPad"),
+        (re.compile(r"\btv\b", re.IGNORECASE), "TV"),
+    ]
+    fixed = title
+    for pattern, repl in replacements:
+        fixed = pattern.sub(repl, fixed)
+    return fixed
 
 
 @dataclass
