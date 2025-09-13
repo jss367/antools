@@ -87,42 +87,6 @@ media:
     comment: ""
 ---
 
-## Deer Crossing the Street
-
-> Note: Sped up 3X to reduce size
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/deer_crossing_the_street.gif?raw=true' />
-
-## Dog picking up toy
-
-<iframe
-  class="autoplay-video"
-  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/ba3c3f73c4ff8cba079687cbd085ab3c/iframe?muted=true&autoplay=false"
-  style="width:100%;aspect-ratio:16/9;border:0"
-  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
-## Cat making bed
-
-<iframe
-  class="autoplay-video"
-  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/f44ec86400e9258921edf15916d17c09/iframe?muted=true&autoplay=false"
-  style="width:100%;aspect-ratio:16/9;border:0"
-  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
-## Cow undoing cage
-
-<iframe
-  class="autoplay-video"
-  src="https://customer-1ixj2hastb04w2ye.cloudflarestream.com/ba98a7130545eba92700fadee37118b8/iframe?muted=true&autoplay=false"
-  style="width:100%;aspect-ratio:16/9;border:0"
-  allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const iframes = document.querySelectorAll(".autoplay-video");
