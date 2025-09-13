@@ -277,8 +277,15 @@ def main():
     level = logging.WARNING if args.verbose == 0 else (logging.INFO if args.verbose == 1 else logging.DEBUG)
     setup_logging(level)
 
-    folder = args.folder.resolve()
     added_root = args.added_root.resolve()
+    # Smart folder resolution:
+    # - If the provided folder path is absolute, use it as-is
+    # - If it's relative (e.g., "body_parts"), interpret it under added_root
+    folder_arg: Path = args.folder
+    if folder_arg.is_absolute():
+        folder = folder_arg.resolve()
+    else:
+        folder = (added_root / folder_arg).resolve()
     if not folder.exists() or not folder.is_dir():
         logging.error("Folder does not exist or is not a directory: %s", folder)
         sys.exit(1)

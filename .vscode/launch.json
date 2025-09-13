@@ -117,7 +117,7 @@
             "cwd": "${workspaceFolder}",
             "envFile": "${workspaceFolder}/.env",
             "args": [
-                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added/electronics",
+                "human_tools",
                 "--log-csv",
                 "logs/upload_log.csv",
                 "--dry-run",
@@ -134,7 +134,7 @@
             "cwd": "${workspaceFolder}",
             "envFile": "${workspaceFolder}/.env",
             "args": [
-                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added/electronics",
+                "human_tools",
                 "--log-csv",
                 "logs/upload_log.csv",
                 "-v"
