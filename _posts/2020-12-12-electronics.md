@@ -47,15 +47,4 @@ media:
     comment: ""
 ---
 
-This is really more screens/computers, not electronics. For example, turning on AC doesn't go here
-
-<b>Table of contents</b>
-
-- TOC
-  {:toc}
-
-## Bird with Tablet
-
-> Note: Sped up 6X
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/electronics/bird_with_tablet.gif?raw=true' />
+This is really more screens/computers, not electronics. For example, turning on AC doesn't go here.
