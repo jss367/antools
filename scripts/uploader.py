@@ -2,6 +2,27 @@
 For unknown reasons, CloudFlare keeps saying I've used up all my quota and only uploads a few videos at a time.
 
 Running this file over and over eventually uploads all the videos.
+
+
+Cloudflare uploader for images and videos.
+
+What this script does
+- Uploads images to Cloudflare Images and videos to Cloudflare Stream
+- Sets metadata for each asset: meta.project = <root folder name>, meta.source = <relative path>
+- Supports concurrency, retries, and simple rate limiting
+- Can append upload details to logs/upload_log.csv (IDs, URLs, metadata)
+- Optional skip-existing behavior based on the CSV and Cloudflare IDs (for images)
+
+When to use this script
+- You want a generic one-way upload for an arbitrary folder tree
+- You are okay with meta.project being the folder name you pass in
+- You do not need to move files after upload; just publish them
+
+Related scripts
+- scripts/list_media.py: Lists what already exists on Cloudflare (Stream + Images)
+- scripts/stream_sync.py: Specialized workflow that uploads videos from "to_add",
+  tags them as project "added", and then moves them into the matching path under
+  the "added" folder after successful upload. Use that if you want upload+move.
 """
 
 import argparse
@@ -17,9 +38,21 @@ import threading
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Callable, Optional, Set, Tuple
 
+import coloredlogs
 import requests
+
+
+def setup_logging(level: int) -> None:
+    """Install colored logging
+
+    The format includes timestamp, level, logger name, line number, and message.
+    """
+    fmt = "%(asctime)s %(levelname)-8s %(name)s:%(lineno)d %(message)s"
+    datefmt = "%H:%M:%S"
+    coloredlogs.install(level=level, fmt=fmt, datefmt=datefmt)  # type: ignore
+    logging.basicConfig(level=level, format=fmt, datefmt=datefmt)
 
 
 class QuotaExceededError(Exception):
@@ -41,6 +74,9 @@ class CfUploader:
         dry_run: bool = False,
         log_csv: Optional[Path] = None,
         skip_existing: bool = False,
+        project_override: Optional[str] = None,
+        file_kinds: Optional[Set[str]] = None,  # e.g., {"video"}, {"image"}, or None for both
+        on_video_uploaded: Optional[Callable[[Path, str, str], None]] = None,  # (path, rel, uid)
     ):
         self.account_id = account_id
         self.api_token = api_token
@@ -59,10 +95,13 @@ class CfUploader:
         self.stream_min_interval_seconds: float = 1.0
         self._stream_rate_lock = threading.Lock()
         self._last_stream_call_ts: float = 0.0
+        self.project_override = project_override
+        self.file_kinds: Optional[Set[str]] = file_kinds
+        self.on_video_uploaded = on_video_uploaded
 
     def run(self, folder: Path):
         self.root_folder = folder.resolve()
-        self.project = self.root_folder.name
+        self.project = self.project_override or self.root_folder.name
 
         # Prepare CSV if requested
         if self.log_csv_path is not None:
@@ -112,6 +151,9 @@ class CfUploader:
             kind = classify_file(p)
             if kind is None:
                 logging.debug("Skipping (unknown type): %s", p)
+                continue
+            if self.file_kinds is not None and kind not in self.file_kinds:
+                logging.debug("Skipping (filtered kind %s): %s", kind, p)
                 continue
             work.append((kind, p))
 
@@ -261,6 +303,12 @@ class CfUploader:
             if self.skip_existing:
                 self._existing_key_set.add(("video", self.project or "", rel))
         time.sleep(1)
+        # Post-upload callback (e.g., move files)
+        if self.on_video_uploaded is not None:
+            try:
+                self.on_video_uploaded(path, rel, uid)
+            except Exception as e:
+                logging.warning("on_video_uploaded callback failed for %s: %s", path, e)
 
     def _rate_limit_stream(self) -> None:
         """Ensure a minimum interval between Stream API calls across threads."""
@@ -494,7 +542,7 @@ def main():
         level = logging.INFO
     elif args.verbose >= 2:
         level = logging.DEBUG
-    logging.basicConfig(level=level, format="%(asctime)s %(levelname)s %(message)s")
+    setup_logging(level)
 
     if not args.folder.exists() or not args.folder.is_dir():
         logging.error("Folder does not exist or is not a directory: %s", args.folder)

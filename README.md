@@ -38,3 +38,5 @@ Images go here:
 https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/images?stamp=1754724111795
 
 It will skip files that are already in your upload log.
+
+There's an API though... should I just use that?

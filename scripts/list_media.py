@@ -1,3 +1,20 @@
+"""
+Cloudflare media lister for Stream and Images.
+
+What this script does
+- Lists Cloudflare Stream videos and Cloudflare Images, including IDs, titles, project meta, timestamps
+- Outputs CSV or JSON to stdout or a file
+- Provides a --project filter that matches meta.project set during upload
+
+When to use this script
+- You want to quickly audit what exists in your Cloudflare account
+- You need IDs to cross-reference or verify uploads
+
+Related scripts
+- scripts/uploader.py: Pushes local folders of media to Cloudflare
+- scripts/stream_sync.py: Upload+move workflow tailored for the animalsusingtools added/to_add flow
+"""
+
 import argparse
 import contextlib
 import csv
@@ -11,6 +28,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+import coloredlogs
 import requests
 
 API_BASE = "https://api.cloudflare.com/client/v4"
@@ -226,6 +244,12 @@ def write_json(rows: list[MediaRow], out: Path | None):
 
 
 def main():
+    def setup_logging(level: int) -> None:
+        fmt = "%(asctime)s %(levelname)-8s %(name)s:%(lineno)d %(message)s"
+        datefmt = "%H:%M:%S"
+        coloredlogs.install(level=level, fmt=fmt, datefmt=datefmt)  # type: ignore
+        logging.basicConfig(level=level, format=fmt, datefmt=datefmt)
+
     ap = argparse.ArgumentParser(description="List Cloudflare Stream videos and Cloudflare Images (titles and IDs)")
     ap.add_argument(
         "--account-id",
@@ -265,7 +289,7 @@ def main():
         level = logging.INFO
     elif args.verbose >= 2:
         level = logging.DEBUG
-    logging.basicConfig(level=level, format="%(asctime)s %(levelname)s %(message)s")
+    setup_logging(level)
 
     lister = CfMediaLister(args.account_id, args.api_token)
 

@@ -8,6 +8,7 @@
             "program": "${workspaceFolder}/scripts/list_media.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
             "args": [
                 "--format",
                 "csv"
@@ -21,9 +22,10 @@
             "program": "${workspaceFolder}/scripts/list_media.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
             "args": [
                 "--project",
-                "antools",
+                "added",
                 "--format",
                 "json",
                 "--out",
@@ -39,6 +41,7 @@
             "program": "${workspaceFolder}/scripts/uploader.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
                 "--dry-run",
@@ -56,12 +59,52 @@
             "program": "${workspaceFolder}/scripts/uploader.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
             "args": [
                 "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
                 "-v",
                 "--log-csv",
                 "logs/upload_log.csv",
                 "--skip-existing"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Stream sync (dry run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/stream_sync.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "--added-dir",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
+                "--to-add-dir",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/to_add",
+                "--log-csv",
+                "logs/upload_log.csv",
+                "--dry-run",
+                "-v"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Stream sync (run)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/stream_sync.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "--added-dir",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/added",
+                "--to-add-dir",
+                "/Users/julius/Library/CloudStorage/SynologyDrive-Mac/animalsusingtools/to_add",
+                "--log-csv",
+                "logs/upload_log.csv",
+                "-v"
             ],
             "justMyCode": true
         }
