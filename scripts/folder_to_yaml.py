@@ -194,12 +194,58 @@ def create_direct_upload_url(account_id: str, token: str, max_duration: int) -> 
     session.headers.update({"Authorization": f"Bearer {token}"})
     url = f"{API_BASE}/accounts/{account_id}/stream/direct_upload"
     payload = {"maxDurationSeconds": max_duration}
-    resp = session.post(url, json=payload, timeout=30)
-    data = resp.json()
-    if resp.status_code >= 400 or not data.get("success", True):
+
+    # Retry on Cloudflare Stream storage quota errors (HTTP 413 / error code 10011)
+    max_retries = 5
+    delay_seconds = 10.0
+
+    for attempt in range(1, max_retries + 1):
+        resp = session.post(url, json=payload, timeout=30)
+        try:
+            data = resp.json()
+        except ValueError:
+            data = {"raw": resp.text}
+
+        success = isinstance(data, dict) and data.get("success", True) and resp.status_code < 400
+        if success:
+            result = data.get("result", {})
+            return result["uploadURL"], result["uid"]
+
+        # Detect quota exceeded condition
+        error_codes: list[int] = []
+        if isinstance(data, dict):
+            for err in data.get("errors") or []:
+                code_val = (err or {}).get("code")
+                if isinstance(code_val, int):
+                    error_codes.append(code_val)
+                elif isinstance(code_val, str):
+                    try:
+                        error_codes.append(int(code_val))
+                    except ValueError:
+                        pass
+
+        quota_exceeded = resp.status_code == 413 or 10011 in error_codes
+        if quota_exceeded and attempt < max_retries:
+            # Include message if present to aid debugging while we wait
+            msg = ""
+            if isinstance(data, dict):
+                msgs = data.get("messages") or []
+                if msgs and isinstance(msgs, list) and isinstance(msgs[0], dict):
+                    msg = msgs[0].get("message", "")
+            logging.warning(
+                "Storage capacity exceeded when creating direct upload (attempt %d/%d). "
+                "Retrying in %.0f seconds... %s",
+                attempt,
+                max_retries,
+                delay_seconds,
+                msg,
+            )
+            time.sleep(delay_seconds)
+            delay_seconds *= 2
+            continue
+
+        # Non-retryable error or exhausted retries
         raise RuntimeError(f"Create direct upload failed: HTTP {resp.status_code} {data}")
-    result = data.get("result", {})
-    return result["uploadURL"], result["uid"]
 
 
 def set_stream_meta(account_id: str, token: str, uid: str, meta: dict) -> None:
@@ -291,7 +337,7 @@ def main():
         sys.exit(1)
     try:
         rel_under_added = folder.relative_to(added_root)
-    except Exception:
+    except ValueError:
         logging.warning("Provided folder is not under the added root; meta.source may not match site conventions.")
         rel_under_added = None
 
