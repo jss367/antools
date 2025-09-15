@@ -19,11 +19,11 @@ media:
     comment: ""
   - kind: video
     title: Cat Watching iPad
-    id: 7d48ab01d6f04e0c9ed1e6c2626b98f7
+    id: b7e5f7e8a6ae4dd6bc9a68dbd18fec22
     comment: ""
   - kind: video
     title: Chimp Using Smartphone
-    id: 9a369d5d00fc4ebfaf3ccc7576869ed1
+    id: aa969d5422894e85a1a1797c9b88cb7c
     comment: ""
   - kind: video
     title: Dog Imitating Dog On TV
@@ -39,7 +39,7 @@ media:
     comment: "I like to think that the guy is showing the gorilla some females and he's selecting through them, although we can't tell what's on the screen."
   - kind: video
     title: Kittens Watching Smartphone
-    id: 84caa914ba2d4a1fbeac879e5b7685c1
+    id: 8ff2898e2dbc405d9fa6705836735fa0
     comment: ""
   - kind: video
     title: Sheep Recognizing Human Faces
