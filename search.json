@@ -3,12 +3,13 @@ sitemap: false
 ---
 
 [
-{% for post in site.posts %}
+{% assign combined = site.posts | concat: site.content %}
+{% for post in combined %}
   {% if post.title != null and post.title != empty and post.search_omit != true %}
     {% if forloop.index > 1 %},{% endif %}{
       "title"			: {{ post.title | jsonify }},
       "link"			: "{{ site.url }}{{ post.url }}",
-      "excerpt"		: "{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once | remove: '\[' | remove: '\]' | remove: '\(' | remove: '\)' }}"
+      "excerpt"		: "{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once | remove: '\\[' | remove: '\\]' | remove: '\\(' | remove: '\\)' }}"
     }
   {% endif %}
 {% endfor %}

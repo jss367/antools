@@ -19,6 +19,19 @@ plugins:
   - jekyll-gist
   - jekyll-feed
 
+# Collections for date-less content
+collections:
+  content:
+    output: true
+    permalink: /:categories/:title/
+
+defaults:
+  - scope:
+      path: "_content"
+      type: content
+    values:
+      layout: post
+
 kramdown:
   input: GFM
   auto_ids: true
