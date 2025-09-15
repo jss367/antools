@@ -23,7 +23,7 @@ plugins:
 collections:
   content:
     output: true
-    permalink: /:categories/:title/
+    permalink: /pages/:name/
 
 defaults:
   - scope:
