@@ -83,6 +83,7 @@ media:
     comment: ""
 ---
 
+<!--
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const iframes = document.querySelectorAll(".autoplay-video");
@@ -100,4 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   iframes.forEach(iframe => observer.observe(iframe));
 });
-</script>
+</script> -->
