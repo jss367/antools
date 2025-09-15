@@ -74,10 +74,6 @@ media:
     id: eda2adc52c06419a80026a29c96ef460
     comment: ""
   - kind: video
-    title: Pigeon Public Transit
-    id: eaa5b485645344809f9225326d20dac8
-    comment: ""
-  - kind: video
     title: Pigeon Using Public Transportation
     id: 534f12b5418f44f5a6324ba65793f178
     comment: ""
