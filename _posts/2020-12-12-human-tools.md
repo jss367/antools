@@ -86,9 +86,3 @@ media:
     id: ac0a17dab33848ecafc7a0de9a4404ff
     comment: ""
 ---
-
-## Leashes
-
-<iframe src='//gifs.com/embed/ROQgBO' frameborder='0' scrolling='no' width='720px' height='1276px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/human_tools/orangutan_canoeing.gif?raw=true' />
