@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating Two
+title: Navigating Is Visible
 excerpt: "All the things needed to navigate a human-shaped world. Using public transit, picking up trash, crossing the street, etc."
 categories: pages
 tags: [Pigeon, Deer, Crow, Dog]
