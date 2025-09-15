@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nav4
+title: bait2
 excerpt: "Birds laying bait to attract fish"
 categories: pages
 tags: [Bird]
@@ -13,12 +13,6 @@ media:
     title: Black Crowned Night Heron Using Bait
     id: 5afc78aa163047cfb82d82070c95c63e
     comment: ""
-  - kind: image
-    title: Crocodile With Twigs As Bait
-    id: added-fcc67d63eb66295683b6ec43465d7644e328de46
-    comment: "I've only been able to find a photo of this and would like to see a video of it working. This is a mugger crocodile. It's collected twigs on its nose. This looks like camoflauge. However this indicates that it's actually bait for nest builders and not camoflauge. It would be interesting to know how "thought out" the process is. As in, do crocodiles "know" that birds make nests from sticks and that they can use sticks as bait? Or, is it just that crocodiles developed an instinct to do this at the right time of year?
-    
-    Image Credit Vladimir Dinets"
   - kind: video
     title: Green Heron Using Bait
     id: 952661ee030c4aef9bd7d335022c7fc5

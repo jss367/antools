@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Player
+title: play3
 excerpt: "Animals playing"
 categories: pages
 tags: [Cat, Chimpanzee, Deer, Dog, Sun Bear]
@@ -21,14 +21,6 @@ media:
     title: Cat Skateboarding
     id: 33452a8fa97d49efbf1b8e79f166c5f6
     comment: ""
-  - kind: video
-    title: FAKE WARNING: Chimp Playing Ping Pong
-    id: ab826cf5e7f34165af50defe0fe2c8a0
-    comment: "FAKE WARNING: Hosted it here so it's indexed and marked as likely fake"
-  - kind: video
-    title: Deer Soccer Ball
-    id: 8e8d18718d824a8aa5cfb428a556ca17
-    comment: "It really looks like the deer has watched humans play soccer, somehow learned that the goal is to put the ball in the goal, and that it's appropriate to celebrate afterwards. This is one of those examples where it certainly _looks_ like the deer is intentionlly doing exactly what human do, and then _celebrating_ afterwards, but it's not conclusive in my opinion. This is the kind of thing I would like to see lots more examples of."
   - kind: video
     title: Dog Playing Volleyball
     id: 0df649be8bcf4195b986698480320770
@@ -70,3 +62,13 @@ media:
     id: d4dc6ba82a1a414f8571db984fb0ae14
     comment: ""
 ---
+
+This contains unusal examples of animals playing. I don't think there's any dog that dogs play similar to the way we do - performing activities with no ultimate "point" other than deriving pleasure from the activity. We've certainly evolved to enjoy play, probably because it acts as practice for future life-saving endeavors, but that's not _why_ we play. We play because it is _fun_, not because we're _intentionally_ practicing for some future event. So that's what I mean by play here.
+
+So I'm not including videos of dogs chasing balls. Not because it's not play but because it's so commonplace. However, when a cow does the same thing... that's a lot more interesting. And only because it's not something I've seen as much. So, what animals like to play?
+
+## Dog Playing Jenga
+
+This one is much longer... I'll upload the rest at some point. I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is "yes", but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
+
+This dog is an Australian Shepherd named Secret. He's able to do all sorts of interesting things. I recomend checking out [his Instagram page](https://www.instagram.com/my_aussie_gal/) to see more. [Buzzfeed highlighted some of the best videos](https://www.buzzfeed.com/lyapalater/im-obsessed-with-this-dog-that-plays-jenga-and-does).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ZNavigating3
+title: play25
 excerpt: "Animals playing"
 categories: pages
 tags: [Cat, Chimpanzee, Deer, Dog, Sun Bear]
