@@ -49,7 +49,7 @@ media:
     title: Dog Playing Jenga
     id: 8f637754c7784ee19786d8712992460b
     comment: "This is a very famous dog. Worth following on instagram.
-    I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is "yes", but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
+    I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is 'yes', but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
 
 This dog is an Australian Shepherd named Secret. He's able to do all sorts of interesting things. I recomend checking out [his Instagram page](https://www.instagram.com/my_aussie_gal/) to see more. [Buzzfeed highlighted some of the best videos](https://www.buzzfeed.com/lyapalater/im-obsessed-with-this-dog-that-plays-jenga-and-does).
 
