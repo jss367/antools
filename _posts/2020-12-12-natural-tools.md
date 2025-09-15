@@ -44,7 +44,7 @@ media:
   - kind: video
     title: Parrot Pasta Scratch
     id: ee58bc9fe14040dd8db1c06fd621bb79
-    comment: ""
+    comment: "Maybe I should move this to a human tool, but it's basically using the pasta as a stick."
   - kind: video
     title: Puffin Scratching With Stick
     id: edeee4ad9f0d4087ac57b785997acf13
@@ -58,11 +58,3 @@ media:
 <iframe src='//gifs.com/embed/1WXjEm' frameborder='0' scrolling='no' width='480px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 <iframe src='//gifs.com/embed/4Q18Gx' frameborder='0' scrolling='no' width='960px' height='1440px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-## Parrot pasta
-
-4X speed up
-
-Maybe I should move this to a human tool, but it's basically using the pasta as a stick.
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/parrot_pasta_scratch.gif?raw=true' />
