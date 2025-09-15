@@ -38,10 +38,6 @@ media:
     id: 281b0505cacc430e84ddf3d3a618d06a
     comment: ""
   - kind: video
-    title: Octopus With Shells
-    id: 5a4e8f3748234a72bb72cfc5087fcdf2
-    comment: ""
-  - kind: video
     title: Parrot Pasta Scratch
     id: ee58bc9fe14040dd8db1c06fd621bb79
     comment: "Maybe I should move this to a human tool, but it's basically using the pasta as a stick."
