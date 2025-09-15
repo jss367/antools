@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating2
+title: ZNavigating3
 excerpt: "Animals playing"
 categories: pages
 tags: [Cat, Chimpanzee, Deer, Dog, Sun Bear]
@@ -62,3 +62,11 @@ media:
     id: d4dc6ba82a1a414f8571db984fb0ae14
     comment: ""
 ---
+
+This contains unusal examples of animals playing. I don't think there's any dog that dogs play similar to the way we do - performing activities with no ultimate "point" other than deriving pleasure from the activity. We've certainly evolved to enjoy play, probably because it acts as practice for future life-saving endeavors, but that's not _why_ we play. We play because it is _fun_, not because we're _intentionally_ practicing for some future event. So that's what I mean by play here.
+
+So I'm not including videos of dogs chasing balls. Not because it's not play but because it's so commonplace. However, when a cow does the same thing... that's a lot more interesting. And only because it's not something I've seen as much. So, what animals like to play?
+
+## Dog Playing Jenga
+
+This one is much longer... I'll upload the rest at some point. I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is "yes", but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
