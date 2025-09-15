@@ -12,7 +12,7 @@ media:
   - kind: video
     title: Bear Jumping With Child
     id: b192ff5b91134120b7f46a7360478d05
-    comment: ""
+    comment: "Is this play? Not really sure. Maybe this should go under immitation."
   - kind: video
     title: Cat Playing With Other Cat
     id: ccfc5aa5434b43959848ea99bc88bd0d
@@ -40,7 +40,7 @@ media:
   - kind: video
     title: Dog And Turtle Playing
     id: 4eab2ab0599047378fd9f12ed413db4c
-    comment: ""
+    comment: "Here's one of those situations where it's really hard to know what's going on inside the animal's head. Clearly the dog is playing a game and the turtle's actions are consistent with the game, but is it _playing_? Is the turtle having _fun_? Is that a turtle thing to do? Or is it something like the ball looks like food, and the turtle is trying to eat it (or do something else completely dissimilar to playing) and it just _looks_ like playing?"
   - kind: video
     title: Dog On Slide
     id: 2ef80fc9668f469b81b0018c53dba038
@@ -79,15 +79,3 @@ This dog is an Australian Shepherd named Secret. He's able to do all sorts of in
 This contains unusal examples of animals playing. I don't think there's any dog that dogs play similar to the way we do - performing activities with no ultimate "point" other than deriving pleasure from the activity. We've certainly evolved to enjoy play, probably because it acts as practice for future life-saving endeavors, but that's not _why_ we play. We play because it is _fun_, not because we're _intentionally_ practicing for some future event. So that's what I mean by play here.
 
 So I'm not including videos of dogs chasing balls. Not because it's not play but because it's so commonplace. However, when a cow does the same thing... that's a lot more interesting. And only because it's not something I've seen as much. So, what animals like to play?
-
-## Dog Turtle Game
-
-Here's one of those situations where it's really hard to know what's going on inside the animal's head. Clearly the dog is playing a game and the turtle's actions are consistent with the game, but is it _playing_? Is the turtle having _fun_? Is that a turtle thing to do? Or is it something like the ball looks like food, and the turtle is trying to eat it (or do something else completely dissimilar to playing) and it just _looks_ like playing?
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/dog_turtle_game.gif?raw=true' />
-
-## Spectacled bear jumping with child
-
-Is this play? Not really sure. Maybe this should go under immitation.
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/sun_bear_jumping_with_child.gif?raw=true' />
