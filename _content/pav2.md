@@ -22,14 +22,6 @@ media:
     id: 33452a8fa97d49efbf1b8e79f166c5f6
     comment: ""
   - kind: video
-    title: FAKE WARNING: Chimp Playing Ping Pong
-    id: ab826cf5e7f34165af50defe0fe2c8a0
-    comment: "FAKE WARNING: Hosted it here so it's indexed and marked as likely fake"
-  - kind: video
-    title: Deer Soccer Ball
-    id: 8e8d18718d824a8aa5cfb428a556ca17
-    comment: "It really looks like the deer has watched humans play soccer, somehow learned that the goal is to put the ball in the goal, and that it's appropriate to celebrate afterwards. This is one of those examples where it certainly _looks_ like the deer is intentionlly doing exactly what human do, and then _celebrating_ afterwards, but it's not conclusive in my opinion. This is the kind of thing I would like to see lots more examples of."
-  - kind: video
     title: Dog Playing Volleyball
     id: 0df649be8bcf4195b986698480320770
     comment: "I want this dog"
