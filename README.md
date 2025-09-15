@@ -40,3 +40,7 @@ https://dash.cloudflare.com/85cd9827d6b73c6498b0f1fcd409a017/images?stamp=175472
 It will skip files that are already in your upload log.
 
 There's an API though... should I just use that?
+
+File notes:
+
+In the front matter, you can't have double quotes (") in the text, and you can't have colons in the titles

@@ -22,7 +22,7 @@ media:
     id: 33452a8fa97d49efbf1b8e79f166c5f6
     comment: ""
   - kind: video
-    title: FAKE WARNING: Chimp Playing Ping Pong
+    title: FAKE WARNING - Chimp Playing Ping Pong
     id: ab826cf5e7f34165af50defe0fe2c8a0
     comment: "FAKE WARNING: Hosted it here so it's indexed and marked as likely fake"
   - kind: video
