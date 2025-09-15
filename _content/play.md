@@ -48,7 +48,12 @@ media:
   - kind: video
     title: Dog Playing Jenga
     id: 8f637754c7784ee19786d8712992460b
-    comment: "This is a very famous dog. Worth following on instagram."
+    comment: "This is a very famous dog. Worth following on instagram.
+    I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is "yes", but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
+
+This dog is an Australian Shepherd named Secret. He's able to do all sorts of interesting things. I recomend checking out [his Instagram page](https://www.instagram.com/my_aussie_gal/) to see more. [Buzzfeed highlighted some of the best videos](https://www.buzzfeed.com/lyapalater/im-obsessed-with-this-dog-that-plays-jenga-and-does).
+
+"
   - kind: video
     title: Dog Practicing Volleyball
     id: b3ce2c40c9354ed8aed6896cbce6eaf3
@@ -75,39 +80,11 @@ This contains unusal examples of animals playing. I don't think there's any dog 
 
 So I'm not including videos of dogs chasing balls. Not because it's not play but because it's so commonplace. However, when a cow does the same thing... that's a lot more interesting. And only because it's not something I've seen as much. So, what animals like to play?
 
-## Dog Playing Jenga
-
-This one is much longer... I'll upload the rest at some point. I'm actually not clear how much this is play... is the dog enjoying it? Or is it doing it because it wants to please its owner. I'm not asking if it's been trained - obviously the answer is "yes", but now that the dog knows the game, is it playing it? It's the difference between asking a dog to sit (result of training but not considered playing) and having a dog chase a tennis ball and drop it at the owner's feet (result of training and still considered playing)
-
-This dog is an Australian Shepherd named Secret. He's able to do all sorts of interesting things. I recomend checking out [his Instagram page](https://www.instagram.com/my_aussie_gal/) to see more. [Buzzfeed highlighted some of the best videos](https://www.buzzfeed.com/lyapalater/im-obsessed-with-this-dog-that-plays-jenga-and-does).
-
-> Note: Sped up 3X
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/secret_playing_jenga.gif?raw=true' />
-
-## Cat Skateboarding
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/cat_skateboarding.gif?raw=true' />
-
-## Dog Skateboarding
-
-This is I find more interesting because the dog really leans into the turn to get around that bend. Very impressive work.
-
-> Note: Sped up 2X
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/dog_skateboarding.gif?raw=true' />
-
 ## Dog Turtle Game
 
 Here's one of those situations where it's really hard to know what's going on inside the animal's head. Clearly the dog is playing a game and the turtle's actions are consistent with the game, but is it _playing_? Is the turtle having _fun_? Is that a turtle thing to do? Or is it something like the ball looks like food, and the turtle is trying to eat it (or do something else completely dissimilar to playing) and it just _looks_ like playing?
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/play/dog_turtle_game.gif?raw=true' />
-
-## Cat Using a Toy to Play
-
-Who needs others when you have a cat toy?
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/cat_playing_with_self.gif?raw=true' />
 
 ## Spectacled bear jumping with child
 

@@ -47,10 +47,6 @@ This is another post where most of these aren't actually using tools, but I came
 
 # Communication
 
-## Monkey Teaching Human
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/communication/monkey_teaching_human.gif?raw=true' />
-
 ## Squirrel Asking for Water
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/communication/squirrel_asking_for_water.gif?raw=true' />
