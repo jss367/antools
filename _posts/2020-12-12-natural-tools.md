@@ -38,7 +38,7 @@ media:
     id: 5a4e8f3748234a72bb72cfc5087fcdf2
     comment: ""
   - kind: video
-    title: Octopususingclamshell
+    title: Octopus Using Clam Shell
     id: e772882a80ea4785b286aee4896f9188
     comment: ""
   - kind: video
@@ -48,11 +48,7 @@ media:
   - kind: video
     title: Puffin Scratching With Stick
     id: edeee4ad9f0d4087ac57b785997acf13
-    comment: ""
-  - kind: video
-    title: Puffin Stick
-    id: 39ec8563b4fa42299483444ee0785bd5
-    comment: ""
+    comment: "This is the only instance of a seabird using a tool that I'm aware of."
 ---
 
 <iframe src='//gifs.com/embed/NLMxXv' frameborder='0' scrolling='no' width='552px' height='284px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
@@ -63,24 +59,6 @@ media:
 
 <iframe src='//gifs.com/embed/4Q18Gx' frameborder='0' scrolling='no' width='960px' height='1440px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
-puffin with stick:
-
-This is the only instance of a seabird using a tool that I'm aware of.
-
-<iframe src='//gifs.com/embed/QnP1K0' frameborder='0' scrolling='no' width='1280px' height='720px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-<img src='{{ site.baseurl }}/assets/images/natural_tools/puffin_stick.gif' />
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/puffin_stick.gif?raw=true' />
-
-#### Octopus Hiding with Shells
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/octopus_hiding_with_shells.gif?raw=true' />
-
-> Note: 2X speed up
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/octopus_with_shells.gif?raw=true' />
-
 ## Parrot pasta
 
 4X speed up
@@ -88,7 +66,3 @@ This is the only instance of a seabird using a tool that I'm aware of.
 Maybe I should move this to a human tool, but it's basically using the pasta as a stick.
 
 <img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/parrot_pasta_scratch.gif?raw=true' />
-
-## Magpie using rocks to displace water
-
-<img src='https://github.com/jss367/antools/blob/gh-pages-2.3.4/assets/images/natural_tools/magpie_water_displacement.gif?raw=true' />
