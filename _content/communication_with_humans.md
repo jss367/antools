@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interacting with Humans
-excerpt: "What can we learn about animals from how they interact with humans"
+title: Communication with Humans
+excerpt: "What can we learn about animals from how they communicate with humans"
 categories: pages
 tags: [Cat, Sign Language]
 image:
