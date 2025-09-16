@@ -25,6 +25,10 @@ media:
     title: Green Heron Using Bait
     id: 952661ee030c4aef9bd7d335022c7fc5
     comment: ""
+  - kind: video
+    title: Dogs Recognizing Their Names
+    id: 1807bb945b034a83b87186716908b9ff
+    comment: ""
 ---
 
 These are my favorites.
