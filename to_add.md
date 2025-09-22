@@ -16,3 +16,10 @@ cat moving chair for person: https://x.com/ShouldHaveCat/status/1953925575468363
 https://x.com/Rainmaker1973/status/1969661869108445206
 
 https://x.com/buitengebieden/status/1968310734506586442
+
+
+Animals using tools
+Orangutans like playing with iPads, but gorillas do not. (no such thing as a fish Ptaszynski) - ep 22
+
+Animal fashion
+There is a group of chimpanzees in Zambia who wear a blade of grass in their left ear as a fashion statement. (Harkin)
